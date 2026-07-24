@@ -1,35 +1,20 @@
-# 🎮 Video Game Sales Data Analysis & Insights
+# Video Game Sales Analysis — VGChartz 2024 EDA
 
-Analysis and visualization of the **Video Game Sales 2024** dataset from VGChartz, containing over 130,000 games. This project uncovers industry trends, platform performance, and factors behind commercial success.
+An exploratory data analysis notebook on the VGChartz 2024 video game sales dataset (64,016 games) with 7 visualizations covering platform dominance, genre performance, critic score vs sales correlation, sales trends, top publishers, regional breakdown, and best-selling recent titles.
 
----
+## What it does
 
-## 📊 Key Analysis
+Reads a real VGChartz dataset (included in the repo), cleans missing values and outlier records (drops games with >50M sales and rows missing critic scores — from 64K down to 4K records), then produces 7 matplotlib/seaborn visualizations with summary statistics. Pure descriptive analytics — no statistical modeling or ML.
 
-- **Platform Dominance** — Top gaming platforms by total sales
-- **Genre Performance** — Best-selling game genres
-- **Critic Score vs Sales** — Correlation between reviews and revenue
-- **Sales Trends** — Year-over-year sales patterns
-- **Publisher Insights** — Top publishers by market share
-- **Regional Breakdown** — Sales distribution across regions
+## Tech stack
 
----
+Python, pandas, matplotlib, seaborn, numpy, Jupyter
 
-## 🛠️ Tech Stack
+## Status
 
-Python, Pandas, Matplotlib, Seaborn, NumPy
+**Complete EDA exercise.** All 13 notebook cells execute successfully with real VGChartz data. The hardcoded absolute path in the `pd.read_csv()` call must be updated to run on another machine. Note: 93.5% of records are dropped during cleaning (mostly due to missing critic scores), reducing the dataset from 64K to 4K games — the critic_score column may be sparse.
 
----
+## Contributors
 
-## 📂 Files
-
-- `vgchartz-2024.csv` — Raw dataset
-- `vgchartz-2024.ipynb` — Jupyter notebook with full analysis & visualizations
-- `Video Game Sales Data Analysis Insights.pdf` — Exported report
-
----
-
-## 👥 Contributors
-
-- **Muhammad Taha Naeem** ([@mtahanaeem](https://github.com/mtahanaeem))
-- **Abdur Rehman** ([@Zin-7045](https://github.com/Zin-7045))
+- Muhammad Taha Naeem
+- Abdur Rehman
